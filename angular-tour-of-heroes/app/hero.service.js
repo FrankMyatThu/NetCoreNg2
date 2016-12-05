@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var mock_heroes_1 = require('./mock-heroes');
+var core_1 = require("@angular/core");
+var mock_heroes_1 = require("./mock-heroes");
 var HeroService = (function () {
     function HeroService() {
     }
@@ -21,11 +21,15 @@ var HeroService = (function () {
         return new Promise(function (resolve) { return setTimeout(resolve, 2000); }) // delay 2 seconds
             .then(function () { return _this.getHeroes(); });
     };
-    HeroService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], HeroService);
+    HeroService.prototype.getHero = function (id) {
+        return this.getHeroes()
+            .then(function (heroes) { return heroes.find(function (hero) { return hero.id === id; }); });
+    };
     return HeroService;
 }());
+HeroService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [])
+], HeroService);
 exports.HeroService = HeroService;
 //# sourceMappingURL=hero.service.js.map
