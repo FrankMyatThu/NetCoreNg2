@@ -26,6 +26,11 @@ export class HeroDetailComponent implements OnInit {
       .subscribe(x => this.hero = x);
   }
 
+   save(): void {
+    this.heroService.update(this.hero)
+      .then(() => this.goBack());
+  }
+
   goBack(): void {
     this.location.back();
   }

@@ -25,6 +25,11 @@ var HeroDetailComponent = (function () {
             .switchMap(function (params) { return _this.heroService.getHero(+params['id']); })
             .subscribe(function (x) { return _this.hero = x; });
     };
+    HeroDetailComponent.prototype.save = function () {
+        var _this = this;
+        this.heroService.update(this.hero)
+            .then(function () { return _this.goBack(); });
+    };
     HeroDetailComponent.prototype.goBack = function () {
         this.location.back();
     };
