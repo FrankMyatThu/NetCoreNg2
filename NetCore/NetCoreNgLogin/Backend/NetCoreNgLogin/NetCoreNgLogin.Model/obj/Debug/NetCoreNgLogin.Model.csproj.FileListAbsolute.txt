@@ -1,0 +1,5 @@
+C:\Frank\NetCoreNg2\NetCore\NetCoreNgLogin\Backend\NetCoreNgLogin\NetCoreNgLogin.Model\bin\Debug\NetCoreNgLogin.Model.dll
+C:\Frank\NetCoreNg2\NetCore\NetCoreNgLogin\Backend\NetCoreNgLogin\NetCoreNgLogin.Model\bin\Debug\NetCoreNgLogin.Model.pdb
+C:\Frank\NetCoreNg2\NetCore\NetCoreNgLogin\Backend\NetCoreNgLogin\NetCoreNgLogin.Model\obj\Debug\NetCoreNgLogin.Model.dll
+C:\Frank\NetCoreNg2\NetCore\NetCoreNgLogin\Backend\NetCoreNgLogin\NetCoreNgLogin.Model\obj\Debug\NetCoreNgLogin.Model.pdb
+C:\Frank\NetCoreNg2\NetCore\NetCoreNgLogin\Backend\NetCoreNgLogin\NetCoreNgLogin.Model\obj\Debug\NetCoreNgLogin.Model.csprojResolveAssemblyReference.cache
